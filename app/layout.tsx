@@ -14,8 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="ko">
-        <body>{children}</body>
+      <html lang="ko" className="h-full antialiased">
+        <body className="min-h-full flex flex-col">{children}</body>
       </html>
     </ClerkProvider>
   )
