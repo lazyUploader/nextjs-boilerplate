@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Next.js Boilerplate',
-  description: 'Next.js + Tailwind + shadcn + Clerk + Drizzle',
+  description: 'Next.js + Tailwind + shadcn + Clerk + Drizzle with posts and comments',
 }
 
 export default function RootLayout({
