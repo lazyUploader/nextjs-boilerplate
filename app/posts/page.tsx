@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { auth } from '@clerk/nextjs/server'
 import { buttonVariants } from '@/components/ui/button'
@@ -14,6 +15,13 @@ export default async function PostsPage() {
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 px-6 py-10">
       <section className="flex flex-col gap-4 rounded-3xl border bg-gradient-to-br from-background to-muted/40 p-6 shadow-sm md:flex-row md:items-end md:justify-between">
         <div className="space-y-2">
+          <Image
+            src="/posts-icon.png"
+            alt="게시판 아이콘"
+            width={72}
+            height={72}
+            className="rounded-2xl shadow-md shadow-black/10"
+          />
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
             Board
           </p>

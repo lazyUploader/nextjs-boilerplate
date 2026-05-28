@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -5,6 +6,14 @@ import { cn } from '@/lib/utils'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-6 px-6 text-center">
+      <Image
+        src="/posts-icon.png"
+        alt="게시판 테스트 아이콘"
+        width={96}
+        height={96}
+        className="rounded-2xl shadow-lg shadow-black/10"
+        priority
+      />
       <p className="text-sm font-medium uppercase tracking-[0.24em] text-muted-foreground">
         Next.js Boilerplate
       </p>
