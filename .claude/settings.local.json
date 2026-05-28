@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"app/\\(auth\\)/sign-in/[[...sign-in]]\")",
+      "Bash(mkdir -p \"app/\\(auth\\)/sign-up/[[...sign-up]]\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(npm install *)",
+      "Bash(git show *)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}
