@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 export default function Home() {
   return (
@@ -7,8 +8,8 @@ export default function Home() {
       <h1 className="text-4xl font-bold">Next.js Boilerplate</h1>
       <p className="text-muted-foreground">Tailwind + shadcn + Clerk + Drizzle</p>
       <div className="flex gap-2">
-        <Button render={<Link href="/sign-in" />}>로그인</Button>
-        <Button variant="outline" render={<Link href="/sign-up" />}>회원가입</Button>
+        <Link href="/sign-in" className={cn(buttonVariants())}>로그인</Link>
+        <Link href="/sign-up" className={cn(buttonVariants({ variant: 'outline' }))}>회원가입</Link>
       </div>
     </main>
   )
