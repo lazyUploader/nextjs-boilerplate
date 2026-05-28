@@ -7,12 +7,8 @@ export default function Home() {
       <h1 className="text-4xl font-bold">Next.js Boilerplate</h1>
       <p className="text-muted-foreground">Tailwind + shadcn + Clerk + Drizzle</p>
       <div className="flex gap-2">
-        <Button asChild>
-          <Link href="/sign-in">로그인</Link>
-        </Button>
-        <Button variant="outline" asChild>
-          <Link href="/sign-up">회원가입</Link>
-        </Button>
+        <Button render={<Link href="/sign-in" />}>로그인</Button>
+        <Button variant="outline" render={<Link href="/sign-up" />}>회원가입</Button>
       </div>
     </main>
   )
